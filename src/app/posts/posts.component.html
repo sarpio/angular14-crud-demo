@@ -15,7 +15,7 @@
         <tbody>
         <tr *ngFor="let post of posts">
             <td>{{ post.id }}</td>
-            <td><a class="text-decoration-none" routerLink="/comments/{{post.id}}">{{ post.title }}</a></td>
+            <td><a class="text-decoration-none text-dark fw-bold" routerLink="/comments/{{post.id}}">{{ post.title }}</a></td>
             <td>{{ post.body }}</td>
             <td class="text-center">
                 <button routerLink="/edit/{{post.id}}" class="btn btn-sm btn-primary">Edit</button>
